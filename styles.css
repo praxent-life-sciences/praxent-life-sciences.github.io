@@ -5,6 +5,7 @@
   --navy-deep: #16344a;
   --sage: #7f8c70;
   --olive: #aab39a;
+  --black: #000;
   --beige: #e7dfc9;
   --beige-soft: #f9f6f07d;
   --ink: #14283a;
@@ -674,6 +675,28 @@ section {
   color: #0f172a;
 }
 
+/* Top Timeline (Black) */
+.traditional-row .timeline-item::after {
+  background-color: #1f2937; /* black/dark */
+}
+
+/* Bottom Timeline (Green) */
+.praxent-row .timeline-item::after {
+  background-color: #8AA66A;
+}
+
+/* Top icons */
+.traditional-row .icon-dark {
+  border: 2px solid #1f2937;
+}
+
+/* Bottom icons */
+.praxent-row .icon-dark {
+  border: 2px solid #8AA66A;
+}
+
+
+
 @media (min-width: 992px) {
   .timeline-row {
     flex-direction: row;
@@ -762,6 +785,60 @@ section {
   box-shadow: none;
 }
 
+
+
+
+
+
+
+.form-label{
+    color:#fff;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.required{
+    color:#ff5b3d;
+}
+
+.required-msg{
+
+    display:none;
+
+    color:#ff5b3d;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    margin-top:6px;
+
+}
+
+.form-control.error{
+
+    border-color:#ff5b3d !important;
+
+}
+
+.form-control.error:focus{
+
+    border-color:#ff5b3d !important;
+
+    box-shadow:none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 .contact-info-item {
   display: flex;
   align-items: center;
@@ -838,14 +915,15 @@ section {
 }
 
 .footer .brand-block img {
-  height: 100px;
-  margin-bottom: 18px;
+  width:180px;
+  margin-bottom: 12px;
   filter: brightness(0) invert(1) opacity(0.95);
 }
 
 .footer .brand-block p {
-  font-size: 0.92rem;
-  max-width: 320px;
+  font-size: 12px;
+  max-width: 280px;
+  margin:0 auto;
 }
 
 .footer .bottom {
@@ -931,20 +1009,23 @@ section {
   list-style: none;
   padding: 0;
   margin: 0;
+  
+}
+.cs-toc ol li {
+  padding: 8px 0px;
 }
 
 .cs-toc li + li {
   border-top: 1px dashed rgba(31, 74, 103, 0.12);
+  
 }
 
 .cs-toc a {
-  display: flex;
-  align-items: center;
   gap: 14px;
   padding: 5px 0;
   color: var(--ink);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: color 0.2s ease;
 }
 
@@ -1184,9 +1265,6 @@ section {
 }
 .border-dotted-bottom {
     border-bottom: 1px dotted var(--border);
-}
-.footer .brand-block img {
-  height: 80px;
 }
 }
 
